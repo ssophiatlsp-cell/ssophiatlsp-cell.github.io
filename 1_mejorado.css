@@ -1,0 +1,418 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #F7F7F7;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+}
+.cont{
+	padding: 0 20px;
+	width: 800px;
+	margin: 40px auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 25px;
+}
+nav{
+	background-color: #0D4B4B;
+	color: #FFFFFF;
+	padding: 15px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 1.0);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.logo{
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.logo span{
+	color: #FFD100;
+}
+nav ul{
+	list-style: none;
+	gap: 20px;
+	display: flex;
+}
+nav li{
+	margin-left: 20px;
+}
+nav a{
+	color: #F7F7F7;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.95rem;
+	transition: color 0.3s ease;
+	padding: 5px 0;
+}
+nav a:hover, nav a.activo{
+	color: #FFD100;
+	border-bottom: 2px solid var(#F7F7F7);
+}
+h1{
+	color: #1E3A3A;
+	text-align: center;
+	font-size: 2.2rem;
+	margin-bottom: 8px;
+	font-weight: 700;
+}
+.destino{
+	background-color: #FFFFFF;
+	margin-bottom: 25px;
+	padding: 25px;
+	border-radius: 12px;
+	border-left: 6px solid #0D4B4B;
+	overflow: hidden;
+}
+.destino:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 12px 25px rgba(13, 75, 75, 0.15);
+}
+.destino h2{
+	color: #1E3A3A;
+	margin: 5px 0 10px 0;
+}
+.categoria{
+	font-weight: bold;
+	color: #F7F7F7;
+	align-self: flex-start;
+	background-color: #0D4B4B;
+	font-weight: 700;
+	font-size: 0.8rem;
+	border-radius: 20px;
+	margin-bottom: 12px;
+	letter-spacing: 0.5px;
+}
+.destino p{
+	color: #444444;
+	margin: 0;
+	line-height: 1.5;
+}
+footer{
+	background-color: #1E3A3A;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 30px 10px;
+	margin-top: 50px;
+}
+.footer-info p{
+	margin: 5px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body{font-family:'Poppins',sans-serif;}
+.logo{font-size:1.7rem;}
+h1{font-size:2.6rem;}
+.destino h2{font-size:1.5rem;}
+.destino img{
+display:block;
+width:100%;
+max-width:700px;
+height:380px;
+object-fit:cover;
+margin:18px auto 0;
+border-radius:10px;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Fondo degradado elegante */
+  color: #ffffff;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+.hero-card {
+  text-align: center;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.05); /* Efecto cristal suave */
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #00d2ff;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.highlight {
+  color: #00d2ff;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #00d2ff;
+  color: #0f2027;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 210, 255, 0.3);
+}
+html {
+  scroll-behavior: smooth;
+}
+.cont {
+  max-width: 1200px; /* Expande las tarjetas a lo ancho */
+  margin: 0 auto;
+  padding: 20px;
+}
+footer {
+  width: 100%;
+  background-color: #1b3a36;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+.contacto-info-card {
+  background: linear-gradient(135deg, #1b3a36, #2d5a53);
+  color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contacto-info-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.info-subtext {
+  color: #b2dfdb;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.info-item .icon {
+  font-size: 1.5rem;
+  color: #00d2ff;
+  width: 30px;
+  text-align: center;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.info-item p {
+  margin: 3px 0 0 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* Tarjeta del Formulario */
+.contacto-form-card {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.contacto-form-card h2 {
+  color: #1b3a36;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #1b3a36;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 14px;
+  background-color: #1b3a36;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #2d5a53;
+}
+.about-header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.badge-about {
+  color: #00d2ff;
+  background-color: #1b3a36;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.about-header h1 {
+  color: #1b3a36;
+  font-size: 2.2rem;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+}
+
+.about-header p {
+  color: #555555;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Tarjetas Misión y Visión */
+.mv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.mv-card {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.mv-icon {
+  font-size: 2.2rem;
+  color: #1b3a36;
+  margin-bottom: 15px;
+}
+
+.mv-card h2 {
+  color: #1b3a36;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.mv-card p {
+  color: #666666;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+/* Sección Valores */
+.valores-section {
+  background: linear-gradient(135deg, #1b3a36, #2d5a53);
+  color: #ffffff;
+  padding: 45px 30px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.valores-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.valor-item i {
+  font-size: 2rem;
+  color: #00d2ff;
+  margin-bottom: 12px;
+}
+
+.valor-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.valor-item p {
+  font-size: 0.9rem;
+  color: #d1e7e4;
+  line-height: 1.5;
+}
